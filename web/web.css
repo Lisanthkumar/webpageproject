@@ -1,0 +1,914 @@
+* {
+  margin: 0px;
+  padding: 0;
+  /* box-sizing: border-box; */
+  font-family: "Times New Roman";
+  font-style: italic;
+  /* color: rgb(0, 0, 0); */
+}
+body {
+  background-color: rgb(49, 122, 133);
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+    /* position: sticky;
+    top: 0; */
+  background: linear-gradient(90deg , red , yellow , green );
+  animation: colour 5s linear infinite;
+
+}
+@keyframes colour {
+  100%{
+    filter: hue-rotate(360deg);
+  }
+  
+}
+.heading {
+  /* background-color: blue; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.heading h1 {
+  margin-left: 10%;
+  font-size: 30px;
+}
+.heading h1::first-letter {
+  font-size: 70px;
+}
+.nav-bar ul {
+  display: flex;
+  list-style: none;
+}
+.nav-bar ul li a {
+  font-size: 20px;
+  font-weight: bold;
+}
+.nav-bar ul li i {
+  padding-left: 30px;
+}
+.fa-shoe-prints {
+  margin-left: 8%;
+}
+.fa-house {
+  margin-right: 15%;
+}
+.fa-code-branch {
+  margin-right: 15%;
+}
+.fa-arrow-right-from-bracket {
+  margin-right: 15%;
+}
+.fa-pen {
+  margin-right: 15%;
+}
+.nav-bar ul li a:hover {
+  color: green;
+}
+#header-names {
+  display: flex;
+  justify-content: center;
+  margin-top: 15%;
+  gap: 40px;
+  /* font-size: 20px; */
+  /* margin-top: 10%; */
+}
+.header-brands::first-letter {
+  font-size: 45px;
+}
+.header-brands:hover {
+  color: aquamarine;
+}
+
+#rotation-animation {
+  margin-left: 45%;
+  margin-top: 20%;
+  position: relative;
+  width: 200px;
+  height: 150px;
+  transform-style: preserve-3d;
+  animation: rotate 20s infinite 0.5s normal;
+}
+@keyframes rotate {
+  0% {
+    transform: perspective(1000px) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(1000px) rotateY(360deg);
+  }
+}
+#rotation-animation span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+}
+#rotation-animation span img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 2px solid rgb(255, 255, 255);
+  border-radius: 15px;
+  height: 100%;
+  object-fit: cover;
+}
+#rotation-animation span h1 {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+  margin: 0;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+#rotation-animation:hover {
+  animation-play-state: paused;
+}
+.rotate-hr {
+  margin-top: 10%;
+  font-weight: bold;
+}
+#nike {
+  position: relative;
+  overflow: hidden;
+  color: rgb(0, 0, 0);
+}
+
+#nike::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("https://w.wallhaven.cc/full/4d/wallhaven-4de8jm.jpg");
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  filter: blur(7px);
+  z-index: -1;
+}
+.logo1 {
+  width: 150px;
+  height: 50px;
+  object-fit: cover;
+  position: absolute;
+  margin-top: 0%;
+}
+#brand-name {
+  margin-left: 11%;
+  margin-top: 0%;
+  font-size: 50px;
+}
+
+P {
+  font-size: 20px;
+  margin: 0px 25px;
+  font-weight: bold;
+}
+
+.branches1 a {
+  margin-left: 3%;
+  font-size: 25px;
+}
+a:hover {
+  color: rgb(255, 0, 0);
+}
+.place1 {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+}
+
+.list a li {
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 17px;
+}
+.list a li:hover {
+  color: rgb(0, 26, 255);
+}
+.nike-image1 {
+  width: 200px;
+  height: 150px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 3%;
+  transition: all 5s normal;
+  box-shadow: 7px 7px 10px white;
+  margin-left: 3%;
+}
+.nike-image1 a img {
+  width: 200px;
+  height: 150px;
+  border-radius: 15px;
+  overflow: hidden;
+  object-fit: fill;
+}
+.nike-image1:hover {
+  transform: translateX(500px) translateY(100px);
+  box-shadow: 7px 7px 10px black;
+}
+.nike-image2 {
+  width: 200px;
+  height: 150px;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 80%;
+  border-radius: 20px;
+  transition: all 5s normal;
+  box-shadow: 7px 7px 10px white;
+}
+.nike-image2 img {
+  width: 200px;
+  height: 150px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.nike-image2:hover {
+  transform: translateX(-500px) translateY(0px);
+  box-shadow: 7px 7px 10px black;
+}
+.nike-image3 {
+  width: 200px;
+  height: 150px;
+  margin-left: 3%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 1%;
+  transition: all 5s normal;
+  box-shadow: 7px 7px 10px white;
+}
+.nike-image3 img {
+  width: 200px;
+  height: 150px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.nike-image3:hover {
+  transform: translateX(500px) translateY(-100px);
+  box-shadow: 7px 7px 10px black;
+}
+.brands1 h3 {
+  margin-left: 13%;
+  font-size: 20px;
+}
+#contact {
+  padding: 20px;
+  text-align: center;
+}
+#contact h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.nike-hr {
+  margin-top: 3%;
+}
+#adidas {
+  position: relative;
+  overflow: hidden;
+  color: rgb(0, 0, 0);
+}
+
+#adidas::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("https://w.wallhaven.cc/full/nz/wallhaven-nzqxjo.jpg");
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  filter: blur(7px);
+  z-index: -1;
+}
+
+.brands2 {
+  display: flex;
+  justify-content: space-evenly;
+}
+.adidas-image1 {
+  width: 200px;
+  height: 150px;
+  border-radius: 20px;
+  margin-top: 3%;
+  transition: all 5s normal;
+  box-shadow: 7px 7px 10px white;
+}
+.adidas-image1 img {
+  width: 200px;
+  height: 150px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.adidas-image1:hover {
+  transform: scale(-1) rotate(180deg);
+  box-shadow: 7px 7px 10px black;
+}
+.adidas-image2 {
+  width: 200px;
+  height: 150px;
+  margin-top: 3%;
+  border-radius: 20px;
+  transition: all 5s normal;
+  box-shadow: 7px 7px 10px white;
+}
+.adidas-image2 img {
+  width: 200px;
+  height: 150px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.adidas-image2:hover {
+  transform: scale(-1) rotate(180deg);
+  box-shadow: 7px 7px 10px black;
+}
+.adidas-image3 {
+  width: 200px;
+  height: 150px;
+  border-radius: 20px;
+  margin-top: 3%;
+  transition: all 5s normal;
+  box-shadow: 7px 7px 10px white;
+}
+.adidas-image3 img {
+  width: 200px;
+  height: 150px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.adidas-image3:hover {
+  transform: scale(-1) rotate(180deg);
+  box-shadow: 7px 7px 10px black;
+}
+
+.brands2 h3 {
+  font-size: 20px;
+  margin-bottom: 0%;
+  margin-left: 13%;
+}
+.adidas-hr {
+  margin-top: 5%;
+}
+#puma {
+  position: relative;
+  overflow: hidden;
+  color: rgb(0, 0, 0);
+}
+
+#puma::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("https://w.wallhaven.cc/full/4l/wallhaven-4lg7r2.jpg");
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  filter: blur(7px);
+  z-index: -1;
+}
+.logo2 {
+  width: 150px;
+  height: 70px;
+  object-fit: cover;
+  position: absolute;
+  margin-left: 2%;
+}
+.puma-image1 {
+  width: 200px;
+  height: 150px;
+  margin-top: 3%;
+  border-radius: 20px;
+  transition: all 2s normal;
+  box-shadow: 7px 7px 10px white;
+}
+.puma-image1 img {
+  width: 200px;
+  height: 150px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.puma-image1:hover {
+  transform: rotate(-45deg);
+  box-shadow: 7px 7px 10px black;
+}
+.puma-image2 {
+  width: 200px;
+  height: 150px;
+  margin-top: 3%;
+  border-radius: 20px;
+  transition: all 2s normal;
+  box-shadow: 7px 7px 10px white;
+}
+.puma-image2 img {
+  width: 200px;
+  height: 150px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.puma-image2:hover {
+  transform: rotate(-45deg);
+  box-shadow: 7px 7px 10px black;
+}
+.puma-image3 {
+  width: 200px;
+  height: 150px;
+  margin-top: 3%;
+  border-radius: 20px;
+  transition: all 2s normal;
+  box-shadow: 7px 7px 10px white;
+}
+.puma-image3 img {
+  width: 200px;
+  height: 150px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.puma-image3:hover {
+  transform: rotate(-45deg);
+  box-shadow: 7px 7px 10px black;
+}
+.puma-hr {
+  margin-top: 5%;
+}
+
+#skechers {
+  position: relative;
+  overflow: hidden;
+  color: rgb(0, 0, 0);
+}
+#brand-name4 {
+  font-size: 30px;
+  margin-left: 13%;
+  margin-top: 3%;
+}
+#skechers::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  background-image: url("https://www.shutterstock.com/image-photo/singapore-feb-5-2019-skechers-260nw-1314192602.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(7px);
+  z-index: -1;
+}
+.skechers-image1 {
+  width: 200px;
+  height: 150px;
+  margin-top: 3%;
+  border-radius: 20px;
+  transition: all 2s normal;
+  box-shadow: 7px 7px 10px white;
+}
+.skechers-image1 img {
+  width: 200px;
+  height: 150px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.skechers-image1:hover {
+  transform: scale(1.2);
+  box-shadow: 7px 7px 10px black;
+}
+.skechers-image2 {
+  width: 200px;
+  height: 150px;
+  margin-top: 3%;
+  border-radius: 20px;
+  transition: all 2s normal;
+  box-shadow: 7px 7px 10px white;
+}
+.skechers-image2 img {
+  width: 200px;
+  height: 150px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.skechers-image2:hover {
+  transform: scale(1.2);
+  box-shadow: 7px 7px 10px black;
+}
+.skechers-image3 {
+  width: 200px;
+  height: 150px;
+  margin-top: 3%;
+  border-radius: 20px;
+  transition: all 2s normal;
+  box-shadow: 7px 7px 10px white;
+}
+.skechers-image3 img {
+  width: 200px;
+  height: 150px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.skechers-image3:hover {
+  transform: scale(1.2);
+  box-shadow: 7px 7px 10px black;
+}
+.skechers-hr {
+  margin-top: 5%;
+}
+
+#asics {
+  position: relative;
+  overflow: hidden;
+  color: rgb(0, 0, 0);
+}
+#asics img {
+  margin-top: 1%;
+}
+#brand-name5 {
+  font-size: 40px;
+  margin-left: 10%;
+  margin-top: 3%;
+}
+
+#asics::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  background-image: url("https://www.craftedny.com/wp-content/uploads/2020/03/crafted-asics-footwear-apparel-hero.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(7px);
+  z-index: -1;
+}
+.asics-image1 {
+  width: 200px;
+  height: 150px;
+  margin-top: 3%;
+  border-radius: 20px;
+  transition: all 2s normal;
+  box-shadow: 7px 7px 10px white;
+  margin-left: 5%;
+}
+.asics-image1 img {
+  width: 200px;
+  height: 150px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.asics-image1:hover {
+  transform: translate(300px) skewY(30deg);
+  box-shadow: 7px 7px 10px black;
+}
+.asics-image2 {
+  width: 200px;
+  height: 150px;
+  margin-top: 3%;
+  border-radius: 20px;
+  transition: all 2s normal;
+  box-shadow: 7px 7px 10px white;
+  margin-left: 5%;
+}
+.asics-image2 img {
+  width: 200px;
+  height: 150px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.asics-image2:hover {
+  transform: translate(300px) skewY(-30deg);
+  box-shadow: 7px 7px 10px black;
+}
+.asics-image3 {
+  width: 200px;
+  height: 150px;
+  margin-top: 3%;
+  border-radius: 20px;
+  transition: all 2s normal;
+  box-shadow: 7px 7px 10px white;
+  margin-left: 5%;
+}
+.asics-image3 img {
+  width: 200px;
+  height: 150px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.asics-image3:hover {
+  transform: translate(300px) skewX(-30deg);
+  box-shadow: 7px 7px 10px black;
+}
+.asics-hr {
+  margin-top: 5%;
+}
+#reebok {
+  position: relative;
+  overflow: hidden;
+  color: rgb(0, 0, 0);
+}
+#reebok img {
+  margin-top: 1%;
+}
+#brand-name6 {
+  font-size: 40px;
+  margin-left: 12%;
+  margin-top: 3%;
+}
+#reebok::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  background-image: url("https://w0.peakpx.com/wallpaper/610/357/HD-wallpaper-reebok-wooden-logo-wooden-backgrounds-fashion-brands-reebok-logo-creative-wood-carving-reebok.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(7px);
+  z-index: -1;
+}
+.reebok-image1 {
+  width: 200px;
+  height: 150px;
+  margin-top: 3%;
+  border-radius: 20px;
+  transition: all 2s normal;
+  box-shadow: 7px 7px 10px white;
+}
+.reebok-image1 img {
+  width: 200px;
+  height: 150px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.reebok-image1:hover {
+  transform: rotateX(60deg) rotateY(30deg); 
+  box-shadow: 7px 7px 10px black;
+}
+.reebok-image2 {
+  width: 200px;
+  height: 150px;
+  margin-top: 3%;
+  border-radius: 20px;
+  transition: all 2s normal;
+  box-shadow: 7px 7px 10px white;
+}
+.reebok-image2 img {
+  width: 200px;
+  height: 150px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.reebok-image2:hover {
+  transform: rotateX(60deg) rotateY(30deg); 
+  box-shadow: 7px 7px 10px black;
+}
+.reebok-image3 {
+  width: 200px;
+  height: 150px;
+  margin-top: 3%;
+  border-radius: 20px;
+  transition: all 2s normal;
+  box-shadow: 7px 7px 10px white;
+}
+.reebok-image3 img {
+  width: 200px;
+  height: 150px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.reebok-image3:hover {
+  transform: rotateX(60deg) rotateY(30deg); 
+  box-shadow: 7px 7px 10px black;
+}
+.reebok-hr {
+  margin-top: 5%;
+}
+#bata {
+  position: relative;
+  overflow: hidden;
+  color: rgb(0, 0, 0);
+}
+#bata img {
+  margin-top: 0%;
+  color: black;
+}
+#brand-name7 {
+  font-size: 35px;
+  margin-left: 7%;
+  margin-top: 1.5%;
+}
+#bata::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  background-image: url("https://thumbs.dreamstime.com/b/box-shoe-bata-logo-banner-red-wording-bangkok-thailand-january-box-shoe-bata-logo-banner-red-wording-bata-gray-paper-138604440.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(7px);
+  z-index: -1;
+}
+.bata-image1 {
+  width: 200px;
+  height: 150px;
+  margin-top: 3%;
+  border-radius: 20px;
+  transition: all 2s normal;
+  box-shadow: 7px 7px 10px white;
+}
+.bata-image1 img {
+  width: 200px;
+  height: 150px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.bata-image1:hover {
+  transform: skew(30deg);
+  box-shadow: 7px 7px 10px black;
+}
+.bata-image2 {
+  width: 200px;
+  height: 150px;
+  margin-top: 3%;
+  border-radius: 20px;
+  transition: all 2s normal;
+  box-shadow: 7px 7px 10px white;
+}
+.bata-image2 img {
+  width: 200px;
+  height: 150px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.bata-image2:hover {
+  transform: skew(-30deg);
+  box-shadow: 7px 7px 10px black;
+}
+.bata-image3 {
+  width: 200px;
+  height: 150px;
+  margin-top: 3%;
+  border-radius: 20px;
+  transition: all 2s normal;
+  box-shadow: 7px 7px 10px white;
+}
+.bata-image3 img {
+  width: 200px;
+  height: 150px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.bata-image3:hover {
+  transform: skewX(30deg);
+  box-shadow: 7px 7px 10px black;
+}
+.bata-hr {
+  margin-top: 5%;
+}
+#woodland {
+  position: relative;
+  overflow: hidden;
+  color: rgb(0, 0, 0);
+}
+#woodland img {
+  margin-top: 1%;
+  font-size: 30px;
+}
+#brand-name8 {
+  font-size: 40px;
+  margin-left: 12%;
+  margin-top: 3%;
+}
+#woodland::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  background-image: url("https://w.wallhaven.cc/full/qd/wallhaven-qd9zoq.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px);
+  z-index: -1;
+}
+.woodland-image1 {
+  width: 200px;
+  height: 150px;
+  margin-top: 3%;
+  border-radius: 20px;
+  transition: all 2s normal;
+  box-shadow: 7px 7px 10px white;
+}
+.woodland-image1 img {
+  width: 200px;
+  height: 150px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.woodland-image1:hover {
+  transform: skewX(-30deg);
+  box-shadow: 7px 7px 10px black;
+}
+.woodland-image2 {
+  width: 200px;
+  height: 150px;
+  margin-top: 3%;
+  border-radius: 20px;
+  transition: all 2s normal;
+  box-shadow: 7px 7px 10px white;
+}
+.woodland-image2 img {
+  width: 200px;
+  height: 150px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.woodland-image2:hover {
+  transform: skewY(-30deg);
+  box-shadow: 7px 7px 10px black;
+}
+.woodland-image3 {
+  width: 200px;
+  height: 150px;
+  margin-top: 3%;
+  border-radius: 20px;
+  transition: all 2s normal;
+  box-shadow: 7px 7px 10px white;
+}
+.woodland-image3 img {
+  width: 200px;
+  height: 150px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.woodland-image3:hover {
+  transform: rotate(360deg);
+  box-shadow: 7px 7px 10px black;
+}
+.woodland-hr {
+  margin-top: 5%;
+}
+#about {
+  height: 2%;
+}
+#about h2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 1%;
+  font-size: 30px;
+  font-weight: bold;
+}
+#about p {
+  margin-top: 1%;
+}
+.about-hr {
+  margin-top: 1.9%;
+}
+
+.end {
+  background-color: #333;
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+}
