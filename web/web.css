@@ -26,17 +26,17 @@ header {
   }
   
 }
-.heading {
+#heading {
   /* background-color: blue; */
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-.heading h1 {
+#heading h1 {
   margin-left: 10%;
   font-size: 30px;
 }
-.heading h1::first-letter {
+#heading h1::first-letter {
   font-size: 70px;
 }
 .nav-bar ul {
@@ -181,7 +181,7 @@ P {
   margin-left: 3%;
   font-size: 25px;
 }
-a:hover {
+.branches1 a:hover {
   color: rgb(255, 0, 0);
 }
 .place1 {
@@ -190,21 +190,20 @@ a:hover {
   font-size: 25px;
 }
 
-.list a li {
+.list li {
   padding: 5px 10px;
   text-align: center;
   text-decoration: none;
   list-style: none;
-  font-size: 20px;
   font-weight: bold;
 }
 
 a {
   text-decoration: none;
   color: black;
-  font-size: 17px;
+  font-size: 20px;
 }
-.list a li:hover {
+.list li a:hover {
   color: rgb(0, 26, 255);
 }
 .nike-image1 {
@@ -284,6 +283,20 @@ a {
 }
 .nike-hr {
   margin-top: 3%;
+}
+.sticky-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 15px 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  
 }
 #adidas {
   position: relative;
